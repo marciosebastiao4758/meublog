@@ -5,3 +5,10 @@
         <li> {{ item }} </li>
     {% endfor %}
 </ul>
+
+  {% for item in posts %}
+        <h2>{{ item.title }}</h2>
+        <h3>{{ item.sub_title }}</h3>
+        <p>{{ item.content }}</p>
+    {% endfor %}
+
