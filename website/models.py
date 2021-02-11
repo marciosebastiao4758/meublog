@@ -6,7 +6,6 @@ class Categorias(models.TextChoices):
     CR = 'CR', 'Curiosidades'
     GR = 'GR', 'Geral'
 
-
 class Contact(models.Model):
     name = models.CharField(max_length=150)
     email = models.EmailField()
@@ -14,11 +13,6 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
-
-
-
-
-
 
 class Post(models.Model):
     title = models.CharField(max_length=100)
@@ -34,6 +28,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-
-    def get_categories_label(self):
+    def get_categoty_label(self):
         return self.get_categories_label()
+
+
